@@ -1,0 +1,6 @@
+n=int(input("enter number for rows:"))
+m=int(input("enter number for columns:"))
+for i in range(n):
+    for j in range(m):
+       print("*",end=" ")
+    print()   
