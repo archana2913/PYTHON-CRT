@@ -1,0 +1,33 @@
+import random
+p1=input("Enter player1:")
+p2=input("Enter player2:")
+d1=random.randint(1,10)
+d2=random.randint(1,10)
+s1=10
+s2=10
+print("-----------------------player 1 TURN-----------------------")
+while s1>0:
+    g1=int(input("enter a number(1-10):"))
+    s1=s1-1
+    if(g1==d1):
+        print("correct guess")
+        break
+if(s1==0):
+    print("no more choices")
+print("-----------------------player 2 TURN-----------------------")
+while s2>0:
+    g2=int(input("enter a number(1-10):"))
+    s2=s2-1
+    if(g2==d2):
+        print("correct guess")
+        break
+if(s2==0):
+    print("no more choices")
+if(s1>s2):
+    print("WINNER is PLayer 1",p1)
+elif(s1<s2):
+    print("WINNER is player 2",p2)
+else:
+    print("DRAW")
+
+ 
