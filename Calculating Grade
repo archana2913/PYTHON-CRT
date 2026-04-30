@@ -1,0 +1,22 @@
+names=["Ramu","raju","rose","jack","ravi"]
+marks=[[30,40,50],[66,77,55],[33,78,90],[87,97,57],[47,88,44]]
+pos=1
+g='A'
+for i in range(5):
+    sum=0
+    avg=0
+    for j in range(len(marks[i])):
+        sum+=marks[i][j]
+    avg=sum/3
+    if avg>=80:
+        g='S'
+    elif avg>=60 and avg<80:
+        g='A'
+    elif avg>=40 and avg<60:
+        g='D'
+    else:
+        g='F'
+    print("{}.{} has Scored {:.2f}% - {} grade".format(pos,names[i],avg,g))   
+    pos+=1
+        
+        
