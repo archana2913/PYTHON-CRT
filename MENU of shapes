@@ -2,10 +2,10 @@ def s():
     side=int(input("enter side:"))
     print("AREA:",side*side)
 def r(l,b):
-    print("AREA:",0.5*b*l)
+    print("AREA:",b*l)
 def c():
-    r=print("enter radius")
-    return 3.14*r*r
+    r=int(input("enter radius:"))
+    return 3.14 * r * r
 def t(b,h):
     return 0.5*b*h
     
